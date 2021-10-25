@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  position: relative;
+}
+
+input {
+  background-color: transparent;
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid #ce9797;
+}
+
+::placeholder {
+  color: #ce9797;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  padding: 9px 33px;
+  border-radius: 30px;
+  border: 1px solid #ce9797;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  opacity: 1;
+  box-shadow: -4px 6px 10px 3px rgba(247, 166, 166, 0.8);
+  transition: 0.3s;
+}
+button:hover {
+  background: linear-gradient(135deg, #f2a1a1, #ee8c8c);
+  transform: scale(1.1);
+}

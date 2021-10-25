@@ -1,3 +1,9 @@
+@import 'variables';
+@import 'grid';
+@import 'form';
+@import 'footer';
+@import 'mediaqueries';
+
 * {
     box-sizing: border-box;
 }
@@ -5,5 +11,6 @@
 body {
     padding: 0;
     margin: 0;
-    font-size: 12pt;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
 }

@@ -1,3 +1,113 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img-container" "text-container" "footer";
+}
+
+.text-container {
+  background-image: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, snow, #f9f0f0);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  grid-area: text-container;
+  flex-direction: column;
+  padding: 20px 20px 50px 20px;
+  text-align: center;
+}
+.text-container .title {
+  padding-top: 50px;
+  font-size: 3.7rem;
+  line-height: 4rem;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.text-container .signup {
+  color: #ce9797;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.img-container {
+  display: flex;
+  grid-area: img-container;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+form {
+  display: flex;
+  position: relative;
+}
+
+input {
+  background-color: transparent;
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid #ce9797;
+}
+
+::placeholder {
+  color: #ce9797;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  padding: 9px 33px;
+  border-radius: 30px;
+  border: 1px solid #ce9797;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  opacity: 1;
+  box-shadow: -4px 6px 10px 3px rgba(247, 166, 166, 0.8);
+  transition: 0.3s;
+}
+button:hover {
+  background: linear-gradient(135deg, #f2a1a1, #ee8c8c);
+  transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "text-container img-container" "footer footer";
+  }
+
+  .text-container {
+    padding: 60px 100px 0px 130px;
+    text-align: left;
+  }
+
+  .text {
+    padding-right: 50px;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -5,5 +115,6 @@
 body {
   padding: 0;
   margin: 0;
-  font-size: 12pt;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
 }
