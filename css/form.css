@@ -8,11 +8,11 @@ input {
   width: 100%;
   padding: 12px;
   border-radius: 30px;
-  border: 1px solid #ce9797;
+  border: 1px solid #b87a7a;
 }
 
 ::placeholder {
-  color: #ce9797;
+  color: #b87a7a;
 }
 
 button {
@@ -21,7 +21,7 @@ button {
   cursor: pointer;
   padding: 9px 33px;
   border-radius: 30px;
-  border: 1px solid #ce9797;
+  border: 1px solid #b87a7a;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   opacity: 1;
   box-shadow: -4px 6px 10px 3px rgba(247, 166, 166, 0.8);

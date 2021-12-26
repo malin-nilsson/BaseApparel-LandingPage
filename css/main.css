@@ -1,7 +1,7 @@
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "img-container" "text-container" "footer";
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
 }
 
 .text-container {
@@ -10,31 +10,29 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  grid-area: text-container;
   flex-direction: column;
   padding: 20px 20px 50px 20px;
   text-align: center;
 }
 .text-container .title {
   padding-top: 50px;
-  font-size: 3.7rem;
+  font-size: 3rem;
   line-height: 4rem;
   letter-spacing: 8px;
-  margin-bottom: 20px;
-  margin-top: 0;
-  font-weight: 400;
+  margin-bottom: 0px 0px 20px;
+  font-weight: 300;
   text-transform: uppercase;
+  color: #b87a7a;
 }
 .text-container .signup {
-  color: #ce9797;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6rem;
+  color: #b87a7a;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0px 20px;
 }
 
 .img-container {
   display: flex;
-  grid-area: img-container;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -45,7 +43,7 @@ main {
 }
 
 span {
-  color: #ce9797;
+  color: #b87a7a;
   font-weight: 300;
 }
 
@@ -59,11 +57,11 @@ input {
   width: 100%;
   padding: 12px;
   border-radius: 30px;
-  border: 1px solid #ce9797;
+  border: 1px solid #b87a7a;
 }
 
 ::placeholder {
-  color: #ce9797;
+  color: #b87a7a;
 }
 
 button {
@@ -72,7 +70,7 @@ button {
   cursor: pointer;
   padding: 9px 33px;
   border-radius: 30px;
-  border: 1px solid #ce9797;
+  border: 1px solid #b87a7a;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   opacity: 1;
   box-shadow: -4px 6px 10px 3px rgba(247, 166, 166, 0.8);
@@ -92,20 +90,65 @@ footer {
 
 @media screen and (min-width: 768px) {
   main {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "text-container img-container" "footer footer";
+    display: flex;
+    flex-direction: row;
   }
 
   .text-container {
-    padding: 60px 100px 0px 130px;
+    width: 50%;
+    padding: 60px 10px 0px 30px;
     text-align: left;
+  }
+  .text-container .signup {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 0px;
+  }
+  .text-container .title {
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+    padding-top: 10px;
   }
 
   .text {
     padding-right: 50px;
+  }
+
+  .img-container {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1110px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .text-container {
+    padding: 60px 10px 0px 130px;
+    text-align: left;
+    width: 50%;
+  }
+  .text-container .signup {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+    padding: 0px;
+  }
+  .text-container .title {
+    font-size: 4rem;
+    line-height: 4.3rem;
+    padding: 80px 0px 10px;
+    margin: 0;
+  }
+
+  .text {
+    padding-right: 50px;
+  }
+
+  .img-container {
+    width: 50%;
   }
 }
 * {

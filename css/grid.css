@@ -1,7 +1,7 @@
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "img-container" "text-container" "footer";
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
 }
 
 .text-container {
@@ -10,31 +10,29 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  grid-area: text-container;
   flex-direction: column;
   padding: 20px 20px 50px 20px;
   text-align: center;
 }
 .text-container .title {
   padding-top: 50px;
-  font-size: 3.7rem;
+  font-size: 3rem;
   line-height: 4rem;
   letter-spacing: 8px;
-  margin-bottom: 20px;
-  margin-top: 0;
-  font-weight: 400;
+  margin-bottom: 0px 0px 20px;
+  font-weight: 300;
   text-transform: uppercase;
+  color: #b87a7a;
 }
 .text-container .signup {
-  color: #ce9797;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6rem;
+  color: #b87a7a;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0px 20px;
 }
 
 .img-container {
   display: flex;
-  grid-area: img-container;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -45,6 +43,6 @@ main {
 }
 
 span {
-  color: #ce9797;
+  color: #b87a7a;
   font-weight: 300;
 }
