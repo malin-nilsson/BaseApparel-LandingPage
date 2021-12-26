@@ -12,6 +12,12 @@ input {
     padding: 12px;
     border-radius: 30px;
     border: 1px solid variables.$desaturated-red;
+
+    &:focus {
+        outline: none;
+        border: 1px solid variables.$desaturated-red;
+        box-shadow: 0 0 8px #cdaebd;
+    }
 }
 
 ::placeholder {

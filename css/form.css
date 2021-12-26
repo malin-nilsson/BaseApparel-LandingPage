@@ -10,6 +10,11 @@ input {
   border-radius: 30px;
   border: 1px solid #b87a7a;
 }
+input:focus {
+  outline: none;
+  border: 1px solid #b87a7a;
+  box-shadow: 0 0 8px #cdaebd;
+}
 
 ::placeholder {
   color: #b87a7a;
