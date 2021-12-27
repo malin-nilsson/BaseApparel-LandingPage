@@ -1,4 +1,12 @@
 @media screen and (min-width: 768px) {
+  header {
+    position: fixed;
+    z-index: 1;
+  }
+  header img {
+    width: 100%;
+  }
+
   main {
     display: flex;
     flex-direction: row;
@@ -17,7 +25,7 @@
   .text-container .title {
     font-size: 3rem;
     line-height: 3.1rem;
-    padding-top: 50px;
+    padding-top: 80px;
   }
 
   .text {
@@ -27,6 +35,10 @@
   .img-container {
     justify-content: flex-start;
     width: 45%;
+  }
+
+  form .form-control {
+    width: 90%;
   }
 
   form .btn {
@@ -40,13 +52,22 @@
     width: 100%;
   }
 
+  .form-control {
+    width: 70%;
+    padding: 10px 20px;
+  }
+
+  form .btn {
+    padding: 10px 30px;
+  }
+
   .text-container {
-    padding: 60px 10px 0px 130px;
+    padding: 60px 100px 0px 130px;
     text-align: left;
-    width: 50%;
+    width: 60%;
   }
   .text-container .signup {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 300;
     padding: 0px;
@@ -57,12 +78,15 @@
     padding: 80px 0px 10px;
     margin: 0;
   }
+  .text-container .black-title {
+    font-weight: 500;
+  }
 
   .text {
     padding-right: 50px;
   }
 
   .img-container {
-    width: 50%;
+    width: 40%;
   }
 }

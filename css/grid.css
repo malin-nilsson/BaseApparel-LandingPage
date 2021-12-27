@@ -24,11 +24,15 @@ main {
   text-transform: uppercase;
   color: #b87a7a;
 }
+.text-container .title-black {
+  color: black;
+  font-weight: 600;
+}
 .text-container .signup {
   color: #b87a7a;
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding: 0px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0px 15px;
 }
 
 .img-container {
@@ -39,7 +43,6 @@ main {
 }
 .img-container img {
   width: 100%;
-  height: auto;
 }
 
 span {

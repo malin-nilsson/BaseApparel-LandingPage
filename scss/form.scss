@@ -2,11 +2,13 @@
 
 form {
     position: relative;
+    padding: 20px 0px;
 
     .form-control {
         display: inline;
-        width: 80%;
-        border-radius: 15px;
+        width: 100%;
+        border-radius: 20px;
+        background-color: transparent;
 
         &:focus {
             outline: none;
@@ -31,7 +33,7 @@ form {
 
 
     ::placeholder {
-        color: variables.$desaturated-red;
+        color: variables.$soft-red;
     }
 
     .btn {

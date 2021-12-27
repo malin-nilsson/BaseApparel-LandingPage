@@ -28,11 +28,16 @@ main {
             color: variables.$desaturated-red;
         }
 
+        .title-black {
+            color: black;
+            font-weight: 600;
+        }
+
         .signup {
             color: variables.$desaturated-red;
-            font-size: 1.5rem;
-            font-weight: 300;
-            padding: 0px 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0px 15px;
         }
     }
 
@@ -41,11 +46,9 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-
+  
     img {
         width: 100%;
-        height: auto;
     }
 }
 

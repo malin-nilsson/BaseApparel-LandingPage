@@ -16,27 +16,33 @@
 </head>
 
 <body>
+    <header>
+      <div class="logo">
+      <img src="images/logo.svg">
+    </div>
+  </header>
   <main>
     <div class="text-container">
-      <div class="logo">
-        <img src="images/logo.svg">
-      </div>
       <div class="text">
-        <h1 class="title">We're coming soon</h1>
+        <h1 class="title">We're <span class="title-black">coming soon</span></h1>
         <p class="signup">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
       </div>
         <form class="needs-validation" novalidate>
-          <input class="form-control" type="email" name="email" placeholder="Your e-mail address..." required>
+          <input class="form-control" type="email" name="email" placeholder="E-mail address..." required>
           <button class="btn needs-validation" type="submit"><img src="/images/icon-arrow.svg" /></button>
-          <div class="invalid-feedback">Email field cannot be blank!</div>
+          <div class="invalid-feedback">Please provide a valid e-mail</div>
         </form>
    
     </div>
     <div class="img-container">
-      <img src="images/hero-desktop.jpg">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/hero-desktop.jpg">
+        <img src="images/hero-mobile.jpg" alt="Girl wearing ">
+    </picture>
+    
     </div>
   </main>
 

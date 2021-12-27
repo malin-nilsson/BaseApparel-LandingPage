@@ -24,11 +24,15 @@ main {
   text-transform: uppercase;
   color: #b87a7a;
 }
+.text-container .title-black {
+  color: black;
+  font-weight: 600;
+}
 .text-container .signup {
   color: #b87a7a;
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding: 0px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0px 15px;
 }
 
 .img-container {
@@ -39,7 +43,6 @@ main {
 }
 .img-container img {
   width: 100%;
-  height: auto;
 }
 
 span {
@@ -49,11 +52,13 @@ span {
 
 form {
   position: relative;
+  padding: 20px 0px;
 }
 form .form-control {
   display: inline;
-  width: 80%;
-  border-radius: 15px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: transparent;
 }
 form .form-control:focus {
   outline: none;
@@ -73,7 +78,7 @@ form input:focus {
   box-shadow: 0 0 8px #cdaebd;
 }
 form ::placeholder {
-  color: #b87a7a;
+  color: #f96262;
 }
 form .btn {
   display: inline;
@@ -100,7 +105,23 @@ footer {
   padding-top: 50px;
 }
 
+header {
+  padding: 30px;
+}
+header img {
+  width: 45%;
+  height: auto;
+}
+
 @media screen and (min-width: 768px) {
+  header {
+    position: fixed;
+    z-index: 1;
+  }
+  header img {
+    width: 100%;
+  }
+
   main {
     display: flex;
     flex-direction: row;
@@ -119,7 +140,7 @@ footer {
   .text-container .title {
     font-size: 3rem;
     line-height: 3.1rem;
-    padding-top: 50px;
+    padding-top: 80px;
   }
 
   .text {
@@ -129,6 +150,10 @@ footer {
   .img-container {
     justify-content: flex-start;
     width: 45%;
+  }
+
+  form .form-control {
+    width: 90%;
   }
 
   form .btn {
@@ -142,13 +167,22 @@ footer {
     width: 100%;
   }
 
+  .form-control {
+    width: 70%;
+    padding: 10px 20px;
+  }
+
+  form .btn {
+    padding: 10px 30px;
+  }
+
   .text-container {
-    padding: 60px 10px 0px 130px;
+    padding: 60px 100px 0px 130px;
     text-align: left;
-    width: 50%;
+    width: 60%;
   }
   .text-container .signup {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 300;
     padding: 0px;
@@ -159,13 +193,16 @@ footer {
     padding: 80px 0px 10px;
     margin: 0;
   }
+  .text-container .black-title {
+    font-weight: 500;
+  }
 
   .text {
     padding-right: 50px;
   }
 
   .img-container {
-    width: 50%;
+    width: 40%;
   }
 }
 * {

@@ -1,10 +1,12 @@
 form {
   position: relative;
+  padding: 20px 0px;
 }
 form .form-control {
   display: inline;
-  width: 80%;
-  border-radius: 15px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: transparent;
 }
 form .form-control:focus {
   outline: none;
@@ -24,7 +26,7 @@ form input:focus {
   box-shadow: 0 0 8px #cdaebd;
 }
 form ::placeholder {
-  color: #b87a7a;
+  color: #f96262;
 }
 form .btn {
   display: inline;
