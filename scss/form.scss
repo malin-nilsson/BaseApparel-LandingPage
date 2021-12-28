@@ -1,8 +1,13 @@
 @use 'variables';
+@use "mixins";
 
 form {
     position: relative;
     padding: 20px 0px;
+
+    @include mixins.tablet-only {
+        width: 90%;
+    }
 
     .form-control {
         display: inline;
@@ -14,6 +19,15 @@ form {
             outline: none;
             border: 1px solid variables.$desaturated-red;
             box-shadow: 0 0 8px #cdaebd;
+        }
+
+        @include mixins.tablet-only {
+            width: 85%;
+        }
+
+        @include mixins.desktop-only {
+            width: 90%;
+            padding: 10px 20px;
         }
     }
 
@@ -30,6 +44,12 @@ form {
             border: 1px solid variables.$desaturated-red;
             box-shadow: 0 0 8px #cdaebd;
         }
+
+        @include mixins.tablet-only {
+            margin-top: 3px;
+        }
+
+       
     }
 
 
@@ -44,7 +64,7 @@ form {
         right: 0;
         top: 20px;
         cursor: pointer;
-        padding: 11px 33px;
+        padding: 11px 25px;
         border-radius: 30px;
         background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
         opacity: 1;
@@ -58,7 +78,15 @@ form {
 
         &:focus {
             box-shadow: none;
+        }
 
+        @include mixins.tablet-only {
+            right: 20px;
+            padding: 12px 25px;
+        }
+
+        @include mixins.desktop-only {
+            padding: 13px 34px;
         }
     }
 }

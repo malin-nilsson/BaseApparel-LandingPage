@@ -1,9 +1,18 @@
 @use 'variables';
+@use "mixins";
 
 main {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
+
+    @include mixins.tablet-only {
+        flex-direction: row;
+    }
+
+    @include mixins.desktop-only {
+        flex-direction: row;
+    }
 }
 
 .text-container {
@@ -16,37 +25,84 @@ main {
     padding: 20px 20px 50px 20px;
     text-align: center;
 
+    @include mixins.tablet-only {
+        width: 55%;
+        padding: 60px 10px 30px 30px;
+        text-align: left;
+    }
 
-        .title {
-            padding-top: 50px;
+    @include mixins.desktop-only {
+        padding: 60px 100px 0px 130px;
+        text-align: left;
+        width: 60%;
+    }
+
+    .title {
+        padding-top: 50px;
+        font-size: 3rem;
+        line-height: 4rem;
+        letter-spacing: 8px;
+        margin-bottom: 0px 0px 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: variables.$desaturated-red;
+
+        @include mixins.tablet-only {
             font-size: 3rem;
-            line-height: 4rem;
-            letter-spacing: 8px;
-            margin-bottom: 0px 0px 20px;
-            font-weight: 300;
-            text-transform: uppercase;
-            color: variables.$desaturated-red;
+            line-height: 3.1rem;
+            padding-top: 80px;
         }
 
-        .title-black {
-            color: black;
-            font-weight: 600;
-        }
-
-        .signup {
-            color: variables.$desaturated-red;
-            font-size: 1rem;
-            font-weight: 500;
-            padding: 0px 15px;
+        @include mixins.desktop-only {
+            font-size: 4rem;
+            line-height: 4.3rem;
+            padding: 120px 0px 10px;
+            margin: 0;
         }
     }
+
+    .title-black {
+        color: black;
+        font-weight: 600;
+    }
+
+    .signup {
+        color: variables.$desaturated-red;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0px 15px;
+
+        @include mixins.tablet-only {
+            font-size: 1.2rem;
+            font-weight: 300;
+            padding: 0px;
+        }
+
+        @include mixins.desktop-only {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            font-weight: 300;
+            padding: 0px;
+        }
+    }
+}
 
 .img-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  
+
+
+    @include mixins.tablet-only {
+        justify-content: flex-start;
+        width: 45%;
+    }
+
+    @include mixins.desktop-only {
+        width: 40%;
+    }
+
     img {
         width: 100%;
     }

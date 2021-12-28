@@ -1,10 +1,24 @@
 @use 'variables';
+@use 'mixins';
 
 header {
     padding: 30px;
 
+    @include mixins.tablet-only {
+        position: fixed;
+        z-index: 1;
+    }
+
+    @include mixins.desktop-only {
+        padding: 40px 0px 0px 130px;
+    }
+
     img {
         width: 45%;
         height: auto;
+
+        @include mixins.tablet-only {
+            width: 100%;
+        }
     }
 }

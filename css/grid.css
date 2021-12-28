@@ -3,6 +3,16 @@ main {
   flex-direction: column-reverse;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1100px) {
+  main {
+    flex-direction: row;
+  }
+}
 
 .text-container {
   background-image: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, snow, #f9f0f0);
@@ -14,6 +24,20 @@ main {
   padding: 20px 20px 50px 20px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .text-container {
+    width: 55%;
+    padding: 60px 10px 30px 30px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .text-container {
+    padding: 60px 100px 0px 130px;
+    text-align: left;
+    width: 60%;
+  }
+}
 .text-container .title {
   padding-top: 50px;
   font-size: 3rem;
@@ -23,6 +47,21 @@ main {
   font-weight: 300;
   text-transform: uppercase;
   color: #b87a7a;
+}
+@media screen and (min-width: 768px) {
+  .text-container .title {
+    font-size: 3rem;
+    line-height: 3.1rem;
+    padding-top: 80px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .text-container .title {
+    font-size: 4rem;
+    line-height: 4.3rem;
+    padding: 120px 0px 10px;
+    margin: 0;
+  }
 }
 .text-container .title-black {
   color: black;
@@ -34,12 +73,38 @@ main {
   font-weight: 500;
   padding: 0px 15px;
 }
+@media screen and (min-width: 768px) {
+  .text-container .signup {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .text-container .signup {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 300;
+    padding: 0px;
+  }
+}
 
 .img-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .img-container {
+    justify-content: flex-start;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .img-container {
+    width: 40%;
+  }
 }
 .img-container img {
   width: 100%;
