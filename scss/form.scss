@@ -6,7 +6,7 @@ form {
     padding: 20px 0px;
 
     @include mixins.tablet-only {
-        width: 90%;
+        width: 100%;
     }
 
     .form-control {
@@ -22,7 +22,7 @@ form {
         }
 
         @include mixins.tablet-only {
-            width: 85%;
+            width: 90%;
         }
 
         @include mixins.desktop-only {
@@ -46,7 +46,7 @@ form {
         }
 
         @include mixins.tablet-only {
-            margin-top: 3px;
+            margin-top: 4px;
         }
 
        
@@ -81,7 +81,7 @@ form {
         }
 
         @include mixins.tablet-only {
-            right: 20px;
+           right: 20px;
             padding: 12px 25px;
         }
 

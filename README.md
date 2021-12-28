@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-During this project I got to practice a lot of styling and learned how to use Flexbox more seamlessly. I also learned more about form validation using Bootstrap. This was one of the biggest challenges for me during the project but also one of the most valuable. 
+During this project I got to practice a lot of styling and learned how to use Flexbox more seamlessly. I also learned more about form validation using Bootstrap. Bootstrap form validation was one of the biggest challenges for me during the project but also one of the most valuable. 
 
 ### Continued development
 
