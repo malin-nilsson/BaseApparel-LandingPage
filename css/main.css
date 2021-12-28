@@ -71,6 +71,7 @@ form input {
   width: 90%;
   border-radius: 30px;
   border: 1px solid #b87a7a;
+  margin-top: 2px;
 }
 form input:focus {
   outline: none;
@@ -81,9 +82,13 @@ form ::placeholder {
   color: #f96262;
 }
 form .btn {
+  border: none;
   display: inline;
+  position: absolute;
+  right: 0;
+  top: 20px;
   cursor: pointer;
-  padding: 9px 33px;
+  padding: 11px 33px;
   border-radius: 30px;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   opacity: 1;
@@ -152,12 +157,18 @@ header img {
     width: 45%;
   }
 
-  form .form-control {
+  form {
     width: 90%;
   }
-
-  form .btn {
-    padding: 5px 25px;
+  form input {
+    margin-top: 3px;
+  }
+  form .form-control {
+    width: 85%;
+  }
+  form .form-control .btn {
+    right: 20px;
+    padding: 12px 25px;
   }
 }
 @media screen and (min-width: 1110px) {
@@ -167,13 +178,17 @@ header img {
     width: 100%;
   }
 
+  header {
+    padding: 40px 0px 0px 130px;
+  }
+
   .form-control {
     width: 70%;
     padding: 10px 20px;
   }
 
   form .btn {
-    padding: 10px 30px;
+    padding: 13px 34px;
   }
 
   .text-container {
@@ -190,7 +205,7 @@ header img {
   .text-container .title {
     font-size: 4rem;
     line-height: 4.3rem;
-    padding: 80px 0px 10px;
+    padding: 120px 0px 10px;
     margin: 0;
   }
   .text-container .black-title {

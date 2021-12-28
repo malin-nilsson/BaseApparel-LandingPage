@@ -7,10 +7,10 @@
             width: 100%;
         }
     }
-    
+
     main {
         display: flex;
-        flex-direction: row;       
+        flex-direction: row;
     }
 
     .text-container {
@@ -33,20 +33,29 @@
 
     .text {
         padding-right: 50px;
-    }    
+    }
 
     .img-container {
         justify-content: flex-start;
         width: 45%;
     }
 
-  form .form-control {
-      width: 90%;
-  }
-  form .btn {
-      padding: 5px 25px;
-  }
-  
+    form {
+        width: 90%;
+
+        input {
+            margin-top: 3px;
+        }
+
+        .form-control {
+            width: 85%;
+
+            .btn {
+                right: 20px;
+                padding: 12px 25px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1110px) {
@@ -56,13 +65,17 @@
         width: 100%;
     }
 
+    header {
+        padding: 40px 0px 0px 130px;
+    }
+
     .form-control {
         width: 70%;
         padding: 10px 20px;
     }
 
     form .btn {
-        padding: 10px 30px;
+        padding: 13px 34px;
     }
 
     .text-container {
@@ -80,9 +93,9 @@
         .title {
             font-size: 4rem;
             line-height: 4.3rem;
-            padding: 80px 0px 10px;
+            padding: 120px 0px 10px;
             margin: 0;
-           
+
         }
 
         .black-title {
@@ -92,7 +105,7 @@
 
     .text {
         padding-right: 50px;
-    }    
+    }
 
     .img-container {
         width: 40%;

@@ -19,6 +19,7 @@ form input {
   width: 90%;
   border-radius: 30px;
   border: 1px solid #b87a7a;
+  margin-top: 2px;
 }
 form input:focus {
   outline: none;
@@ -29,9 +30,13 @@ form ::placeholder {
   color: #f96262;
 }
 form .btn {
+  border: none;
   display: inline;
+  position: absolute;
+  right: 0;
+  top: 20px;
   cursor: pointer;
-  padding: 9px 33px;
+  padding: 11px 33px;
   border-radius: 30px;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   opacity: 1;
